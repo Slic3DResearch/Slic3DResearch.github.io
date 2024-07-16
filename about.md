@@ -38,9 +38,3 @@ title: About Us - Slic3D Research
         <p>Contact us at <a href="mailto:your-email@domain.com">your-email@domain.com</a></p>
     </div>
 </main>
-
-<div class="centered-navigation">
-    [Home](/)
-    [About](/about)
-    [Contact](/contact)
-</div>

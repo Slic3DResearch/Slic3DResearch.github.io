@@ -107,9 +107,9 @@ form button[type="submit"]:hover {
 }
 
 .social-icons img {
-    width: 20px; /* Adjust size as needed */
-    height: 20px;
+    width: 30px; /* Adjust size as needed */
+    height: 30px;
     border-radius: 50%; /* Rounded shape */
-    border: 2px solid #3DD2E8; /* Light blue border */
+    border: 20px solid #3DD2E8; /* Light blue border */
     transition: transform 0.3s ease-in-out;
 }

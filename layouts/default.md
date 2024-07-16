@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.05">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header style="background-color: #3DD2E8; padding: 10px; text-align: center;">
+            <div class="centered-navigation">
+                <nav>
+                    <a href="/" class="nav-link">Home</a>
+                    <a href="/about" class="nav-link">About</a>
+                    <a href="/contact" class="nav-link">Contact</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="container">
+            {{ content }}
+        </main>
+
+        <footer style="background-color: #3DD2E8; color: black; text-align: center; padding: 10px;">
+            &copy; {{ site.time | date: "%Y" }} Slic3D Research. All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>
