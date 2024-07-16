@@ -34,3 +34,9 @@ title: Contact - Slic3D Research
         </form>
     </div>
 </main>
+
+<div class="centered-navigation">
+    [Home](/)
+    [About](/about)
+    [Contact](/contact)
+</div>
