@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Slic3D Research</title>
+    <title>About Me - Slic3D Research</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -11,22 +11,15 @@
         <nav>
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="about">About Me</a></li>
-                <li><a href="contact">Contact</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="hero">
-        <div class="logo">
-            <h1><span class="logo-s">S</span>lic3D Research</h1>
-        </div>
-        <p>Your leading source for innovative 3D printing solutions.</p>
-    </section>
-
     <section class="content">
-        <h2>What We Do</h2>
-        <p>Insert brief description of your company and its services.</p>
+        <h2>About Me</h2>
+        <p>Insert information about yourself and your expertise in 3D printing.</p>
     </section>
 
     <footer>
