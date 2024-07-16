@@ -3,31 +3,32 @@ layout: default
 title: Contact - Slic3D Research
 ---
 
-# Contact Us
+<header>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-## Social Media
+<main>
+    <div class="container">
+        <h1>Contact Us</h1>
 
-### Follow Us:
+        <h2>Social Media</h2>
+        <div class="social-icons">
+            <a href="https://www.youtube.com/your_channel"><img src="/img/yt_logo_mono_light.png" alt="YouTube"></a>
+            <a href="https://www.instagram.com/your_username"><img src="/img/Instagram_Glyph_Black.png" alt="Instagram"></a>
+        </div>
 
-- [![YouTube Logo](/img/yt_logo_mono_light.png)](https://www.youtube.com/)
-  - Follow on [YouTube](https://www.youtube.com/)
-
-- [![Instagram Logo](/img/Instagram_Glyph_Black.png)](https://www.instagram.com/)
-  - Follow on [Instagram](https://www.instagram.com/)
-
-## Contact Form
-
-### Reach out to us via email:
-
-<form action="https://formsubmit.co/your-email@domain.com" method="POST">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-    <button type="submit">Send Message</button>
-</form>
-
-## Footer
-
-&copy; 2024 Slic3D Research. All rights reserved.
-
-Contact us at [your-email@domain.com](mailto:your-email@domain.com)
+        <h2>Contact Form</h2>
+        <form action="https://formsubmit.co/your-email@domain.com" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</main>
