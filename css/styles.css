@@ -4,7 +4,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #fff; /* White background */
+    background-color: #f0f0f0; /* Light grey background */
     color: #333; /* Dark grey text */
 }
 
@@ -22,33 +22,23 @@ header {
     text-align: center;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-    color: #fff; /* White text */
-}
-
-/* Navigation styles */
-nav ul {
+header nav ul {
     list-style-type: none;
     padding: 0;
-    text-align: center;
 }
 
-nav ul li {
+header nav ul li {
     display: inline;
     margin-right: 10px;
 }
 
-nav ul li a {
-    color: #333; /* Dark grey text */
+header nav ul li a {
+    color: #fff; /* White text */
     text-decoration: none;
-    padding: 10px;
 }
 
-nav ul li a:hover {
-    background-color: #f0f0f0; /* Light grey background on hover */
-    border-radius: 5px;
+header nav ul li a:hover {
+    text-decoration: underline;
 }
 
 /* Main content styles */
@@ -56,8 +46,12 @@ main {
     padding: 20px 0;
 }
 
-main h2 {
-    font-size: 2em;
+main h1,
+main h2,
+main h3,
+main h4,
+main h5,
+main h6 {
     margin-bottom: 10px;
 }
 
@@ -120,8 +114,8 @@ form button[type="submit"]:hover {
 }
 
 .social-icons img {
-    width: 50px; /* Adjust size as needed */
-    height: 50px;
+    width: 20px; /* Set width to 20px */
+    height: 20px; /* Set height to 20px */
     border-radius: 50%; /* Rounded shape */
     border: 2px solid #3DD2E8; /* Light blue border */
     transition: transform 0.3s ease-in-out;

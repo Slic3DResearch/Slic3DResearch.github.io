@@ -19,8 +19,8 @@ title: Contact - Slic3D Research
 
         <h2>Social Media</h2>
         <div class="social-icons">
-            <a href="https://www.youtube.com/your_channel"><img src="/img/yt_logo_mono_light.png" alt="YouTube"></a>
-            <a href="https://www.instagram.com/your_username"><img src="/img/Instagram_Glyph_Black.png" alt="Instagram"></a>
+            <a href="https://www.youtube.com/"><img src="/img/yt_logo_mono_light.png" alt="YouTube"></a>
+            <a href="https://www.instagram.com/"><img src="/img/Instagram_Glyph_Black.png" alt="Instagram"></a>
         </div>
 
         <h2>Contact Form</h2>
