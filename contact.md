@@ -3,6 +3,8 @@ layout: default
 title: Contact - Slic3D Research
 ---
 
+<link rel="stylesheet" href="/css/styles.css">
+
 <header>
     <nav>
         <ul>
