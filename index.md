@@ -1,36 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Slic3D Research</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+---
+layout: default
+title: Home - Slic3D Research
+---
 
-    <section class="hero">
-        <div class="logo">
-            <h1><span class="logo-s">S</span>lic3D Research</h1>
-        </div>
-        <p>Your leading source for innovative 3D printing solutions.</p>
-    </section>
+# Welcome to Slic3D Research
 
-    <section class="content">
-        <h2>What We Do</h2>
-        <p>Insert brief description of your company and its services.</p>
-    </section>
+Slic3D Research is dedicated to pioneering 3D printing technology through innovative solutions. Our commitment to excellence drives us to explore new frontiers in electromagnetics-based printing.
 
-    <footer>
-        <p>&copy; 2024 Slic3D Research. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+## Services Offered
+
+- Advanced 3D Printing Solutions
+- Research and Development
+- Consultancy Services
+
+## Latest News
+
+Stay tuned for updates on our latest projects and innovations!
+
+## Contact Us
+
+Find out how we can help you realize your vision with cutting-edge technology.
+
+Contact us at [your-email@domain.com](mailto:your-email@domain.com)
