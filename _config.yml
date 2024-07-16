@@ -1,1 +1,41 @@
-markdown: kramdown
+# Site settings
+title: Slic3D Research
+description: Pioneering 3D printing technology through innovative solutions
+baseurl: "" # If your site is hosted in a subdirectory, specify it here, e.g., /blog
+url: "https://yourdomain.com" # Replace with your actual domain
+
+# Build settings
+theme: minima # Default Jekyll theme; change if using a custom theme
+markdown: kramdown # Default Markdown parser
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Collections (if needed)
+# collections:
+#   your_collection_name:
+#     output: true
+
+# Permalinks
+permalink: /:title/
+
+# Pagination
+paginate: 10 # Number of posts per page
+
+# GitHub Pages settings
+github_pages:
+  enabled: true
+  jekyll_plugins:
+    - jekyll-feed # Generate a feed for your site
+
+# Custom variables specific to your use case
+author: Slic3D Research Team
+email: your-email@domain.com
+twitter_username: slic3d_research
