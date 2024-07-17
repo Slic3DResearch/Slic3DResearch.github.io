@@ -1,7 +1,5 @@
 # Site settings
-title: Slic3D Research
-description: Pioneering 3D printing technology through innovative solutions
-baseurl: "" # If your site is hosted in a subdirectory, specify it here, e.g., /blog
+title: ""
 url: "https://slic3dresearch.com/" # Replace with your actual domain
 
 # Build settings
@@ -24,7 +22,7 @@ exclude:
 #     output: true
 
 # Permalinks
-permalink: /:title/
+#permalink: /:title/
 
 # Pagination
 paginate: 10 # Number of posts per page
@@ -36,6 +34,6 @@ github_pages:
     - jekyll-feed # Generate a feed for your site
 
 # Custom variables specific to your use case
-author: Slic3D Research
-email: your-email@domain.com
-twitter_username: slic3d_research
+#author: Slic3D Research
+#email: your-email@domain.com
+#twitter_username: slic3d_research

@@ -21,9 +21,11 @@ header {
   height: 50px; /* Adjust height as needed */
 }
 
-.centered-navigation {
+nav.centered-navigation {
   text-align: center;
   margin-top: 10px;
+  /* Reset direction to ltr (optional) */
+  direction: ltr;
 }
 
 .centered-navigation a {
@@ -38,9 +40,11 @@ header {
   margin: 0 10px;
 }
 
+
 main {
   flex: 1;
   padding: 20px;
+  margin-bottom: 50px; /* Adjust margin as needed */
 }
 
 .container {
@@ -57,6 +61,11 @@ footer {
   color: black;
   text-align: center;
   padding: 10px;
+  /* Set footer to flex and fill remaining space */
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  height: 50px; /* Adjust height as needed */
 }
 
 /* Form styles */
