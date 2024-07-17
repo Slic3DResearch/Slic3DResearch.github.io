@@ -98,6 +98,8 @@ img {
 }
 
 footer {
+  background-color: #3DD2E8; /* Light Blue color (same as header) */
+  padding: 20px;
+  color: white; /* Text color for better contrast */
   text-align: center;
-  padding: 10px;
 }
