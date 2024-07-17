@@ -20,8 +20,13 @@ header a {
   padding: 10px;
 }
 
+/* Main container */
 main {
-  padding: 20px;
+  max-width: 800px; /* Adjust maximum width as per your design */
+  margin: 20px auto; /* Center the container horizontally and add space around it */
+  padding: 20px; /* Apply padding inside the container */
+  background-color: #fff; /* White background for main content */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Adding a subtle shadow */
 }
 
 h1 {
