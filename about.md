@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: none
 title: About Us - Slic3D Research
 ---
 
