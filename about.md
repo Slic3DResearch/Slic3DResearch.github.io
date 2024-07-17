@@ -6,16 +6,6 @@ title: About Us - Slic3D Research
 <link rel="stylesheet" href="/css/styles.css">
 
 
-<header>
-    <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
-
 <main>
     <div class="container">
         <h1>About Slic3D Research</h1>

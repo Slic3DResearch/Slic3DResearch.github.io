@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    <div class="wrapper">
-        <header style="background-color: #3DD2E8; text-align: center; padding: 10px;">
-            <nav>
-   		<a href="/">Home</a>
-    		<a href="/about">About</a>
-    		<a href="/contact">Contact</a>
-            </nav>
-        </header>
+  <div class="wrapper">
+    <header style="background-color: #3DD2E8; text-align: center; padding: 10px; flex: 0 0 auto; height: 50px;">
+      <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+      </nav>
+    </header>
 
-        <main class="container">
-            {{ content }}
-        </main>
+    <main class="container">
+      {{ content }}
+    </main>
 
-        <footer style="background-color: #3DD2E8; color: black; text-align: center; padding: 10px;">
-            &copy; {{ site.time | date: "%Y" }} Slic3D Research. All rights reserved.
-        </footer>
-    </div>
+    <footer style="background-color: #3DD2E8; color: black; text-align: center; padding: 10px;">
+      &copy; {{ site.time | date: "%Y" }} Slic3D Research. All rights reserved.
+    </footer>
+  </div>
 </body>
 </html>
