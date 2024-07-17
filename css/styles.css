@@ -114,7 +114,7 @@ footer {
 }
 
 .social-buttons img {
-  width: 40px; /* Adjust width as needed */
-  height: auto;
+  width: auto; /* Adjust width as needed */
+  height: 40px;
   margin-right: 10px; /* Add some spacing between icons */
 }
