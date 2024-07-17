@@ -6,7 +6,7 @@ description: A brief description of your site
 baseurl: "" # the subpath of your site, e.g. /blog/ or empty for root
 
 # Build settings
-theme: jekyll-theme-minimal
+#theme: 
 
 # GitHub Pages specific settings
 markdown: kramdown
