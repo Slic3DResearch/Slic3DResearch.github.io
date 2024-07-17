@@ -1,0 +1,32 @@
+# _config.yml
+
+# Site settings
+title: Your Site Title
+description: A brief description of your site
+baseurl: "" # the subpath of your site, e.g. /blog/ or empty for root
+
+# Build settings
+theme: jekyll-theme-minimal
+
+# GitHub Pages specific settings
+markdown: kramdown
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+
+# Stylesheet path
+assets:
+  css_dir: /css
+
+# Layouts path
+layouts:
+  default: _layouts/default.html
+
+# Output settings
+include:
+  - index.html
+  - about.html
+  - contact.html
+  - store.html
