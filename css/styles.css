@@ -108,3 +108,13 @@ footer {
   color: white; /* Text color for better contrast */
   text-align: center;
 }
+
+.social-buttons {
+  margin-top: 20px;
+}
+
+.social-buttons img {
+  width: 40px; /* Adjust width as needed */
+  height: auto;
+  margin-right: 10px; /* Add some spacing between icons */
+}
