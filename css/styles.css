@@ -24,7 +24,6 @@ header {
 nav.centered-navigation {
   text-align: center;
   margin-top: 10px;
-  /* Reset direction to ltr (optional) */
   direction: ltr;
 }
 
@@ -34,9 +33,10 @@ nav.centered-navigation {
   margin: 0 10px;
 }
 
-.nav-link {
+.nav {
   color: #3DD2E8; /* Light blue for navigation text */
   text-decoration: none;
+  direction: ltr;
   margin: 0 10px;
 }
 
@@ -44,7 +44,7 @@ nav.centered-navigation {
 main {
   flex: 1;
   padding: 20px;
-  margin-bottom: 50px; /* Adjust margin as needed */
+  margin-bottom: 10px; /* Adjust margin as needed */
 }
 
 .container {
@@ -61,7 +61,6 @@ footer {
   color: black;
   text-align: center;
   padding: 10px;
-  /* Set footer to flex and fill remaining space */
   display: flex;
   justify-content: center; /* Center content horizontally */
   align-items: center; /* Center content vertically */
@@ -114,6 +113,5 @@ form button[type="submit"]:hover {
 }
 
 .social-icons img {
-  width: 30px; /* Adjust size as needed */
   height: 30px;
 }
