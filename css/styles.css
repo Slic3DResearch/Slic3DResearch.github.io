@@ -64,7 +64,6 @@ footer {
   display: flex;
   justify-content: center; /* Center content horizontally */
   align-items: center; /* Center content vertically */
-  height: 50px; /* Adjust height as needed */
 }
 
 /* Form styles */
