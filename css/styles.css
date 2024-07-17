@@ -29,6 +29,74 @@ h1 {
   margin-bottom: 10px;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Styles for Contact Page */
+.contact form {
+  margin-top: 20px;
+}
+
+.contact label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.contact textarea {
+  height: 100px;
+}
+
+.contact button {
+  background-color: #3DD2E8; /* Light Blue button */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Styles for Store Page */
+.store .product {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.store .product img {
+  width: 200px;
+  margin-right: 20px;
+}
+
+.store .product h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.store .product p {
+  margin-bottom: 5px;
+}
+
+.store .product a {
+  background-color: #3DD2E8; /* Light Blue button */
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
 footer {
   text-align: center;
   padding: 10px;
