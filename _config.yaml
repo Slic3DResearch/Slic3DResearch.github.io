@@ -21,7 +21,7 @@ assets:
   css_dir: /css
 
 # Layouts path
-layouts:
+layouts_dir:
   default: layouts/default.html
 
 # Output settings
