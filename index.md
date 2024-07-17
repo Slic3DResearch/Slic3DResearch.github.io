@@ -5,6 +5,7 @@ title: Home - Slic3D Research
 
 <link rel="stylesheet" href="/css/styles.css">
 
+
 <main>
   <div class="container">
     <h1>Welcome to Slic3D Research</h1>
