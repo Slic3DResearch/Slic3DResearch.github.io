@@ -10,7 +10,7 @@ header {
   background-color: #3DD2E8; /* Light Blue banner */
   padding: 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 header a {
