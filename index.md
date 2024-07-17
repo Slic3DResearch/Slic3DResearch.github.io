@@ -3,7 +3,6 @@ layout: default
 title: Home - Slic3D Research
 ---
 
-<link rel="stylesheet" href="/css/styles.css">
 
 ## Welcome to Slic3D Research
 
