@@ -5,22 +5,18 @@ title: Contact - Slic3D Research
 
 <link rel="stylesheet" href="/css/styles.css">
 
-<main>
-    <div class="container">
-        <h1>Contact Us</h1>
+## Contact Us
 
-        <h2>Social Media</h2>
-        <div class="social-icons">
-            <a href="https://www.youtube.com/"><img src="/img/yt_logo_mono_light.png" alt="YouTube"></a>
-            <a href="https://www.instagram.com/"><img src="/img/Instagram_Glyph_Black.png" alt="Instagram"></a>
-        </div>
+**Social Media**
 
-        <h2>Contact Form</h2>
-        <form action="https://formsubmit.co/your-email@domain.com" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </div>
-</main>
+* [YouTube](https://www.youtube.com/) ([Image of YouTube logo](/img/yt_logo_mono_light.png))
+* [Instagram](https://www.instagram.com/) ([Image of Instagram logo](/img/Instagram_Glyph_Black.png))
+
+**Contact Form**
+
+**(Note: This is a static form and won't submit data yet. Consider using a form service like Formspree or integrating with your website backend.)**
+
+* Your Name: (text field)
+* Your Email: (email field)
+* Your Message: (multiline text field)
+* Send Message: (button)
