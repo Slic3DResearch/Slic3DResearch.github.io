@@ -22,7 +22,7 @@ assets:
 
 # Layouts path
 layouts:
-  default: _layouts/default.html
+  default: layouts/default.html
 
 # Output settings
 include:
