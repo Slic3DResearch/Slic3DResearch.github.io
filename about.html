@@ -8,10 +8,12 @@
 </head>
 <body>
   <header>
-    <a href="/">Home</a>
-    <a href="/about">About</a>
-    <a href="/contact">Contact</a>
-    <a href="/store">Store</a>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/contact">Contact</a>
+      <a href="/store">Store</a>
+    </nav>
   </header>
 
   <main>
@@ -36,5 +38,14 @@
   <footer>
     <p>&copy; 2024 Slic3D Research</p>
   </footer>
+
+  <!-- Optional: JavaScript to enhance engagement -->
+  <script>
+    // Example function to enhance user experience when clicking the contact button
+    document.querySelector('.cta button').addEventListener('click', () => {
+      alert('Thank you for your interest! We would love to hear from you.');
+      window.location.href='/contact';
+    });
+  </script>
 </body>
 </html>

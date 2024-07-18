@@ -8,17 +8,19 @@
 </head>
 <body>
   <header>
-    <a href="/">Home</a>
-    <a href="/about">About</a>
-    <a href="/contact">Contact</a>
-    <a href="/store">Store</a>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/contact">Contact</a>
+      <a href="/store">Store</a>
+    </nav>
   </header>
 
   <main>
     <!-- Hero Section -->
     <section class="hero">
-      <h1>Welcome to Slic3D Research</h1>
-      <p>Innovating the future of 3D printing technology</p>
+      <h1>Welcome to Slic3D Research</h1> <!-- Color defined in CSS -->
+      <p>Innovating the future of 3D printing technology</p> <!-- Color defined in CSS -->
       <button onclick="window.location.href='/contact'">Learn More</button>
     </section>
 
@@ -55,5 +57,14 @@
   <footer>
     <p>&copy; 2024 Slic3D Research</p>
   </footer>
+
+  <!-- Optional: JavaScript to enhance user experience -->
+  <script>
+    // Example function to enhance the user experience
+    document.querySelector('.cta button').addEventListener('click', () => {
+      alert('Thank you for your interest! We will get back to you soon!');
+      window.location.href='/contact';
+    });
+  </script>
 </body>
 </html>
