@@ -12,9 +12,15 @@ header {
   background: linear-gradient(90deg, #3DD2E8, #68DDEB); /* Gradient background */
   padding: 15px 20px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+nav {
+  display: flex;
+  justify-content: space-around; /* Distribute navigation links evenly */
+  width: 100%; /* Ensure nav takes full width */
 }
 
 header a {
@@ -226,11 +232,75 @@ footer {
 /* Social Buttons */
 .social-buttons {
   margin-top: 20px;
+  text-align: center; /* Center-align social buttons */
 }
 
 .social-buttons img {
   height: 40px;
-  margin-right: 10px; /* Spacing between icons */
+  margin: 0 10px; /* Add some spacing between icons */
+}
+
+/* Store Page Specific Styles */
+.store {
+  padding: 50px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.store h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 20px; /* Space between items */
+  margin-top: 20px;
+}
+
+.product {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  text-align: left;
+  transition: box-shadow 0.3s ease;
+}
+
+.product:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.product h3 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.product p {
+  font-size: 16px;
+  margin: 0;
+}
+
+.product button {
+  background-color: #3DD2E8;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.product button:hover {
+  background-color: #35BBC6;
 }
 
 /* Responsive Design */
@@ -271,55 +341,20 @@ footer {
     font-size: 16px;
   }
 
-  /* Store Styles */
   .store {
-    padding: 50px 20px;
-    background-color: #fff;
-    text-align: center;
-  }
-
-  .store h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-
-  .product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
-    gap: 20px; /* Space between items */
-    margin-top: 20px;
-  }
-
-  .product {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 15px;
-    text-align: left;
-    transition: box-shadow 0.3s ease;
-  }
-
-  .product:hover {
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  }
-
-  .product img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
+    padding: 30px 15px;
   }
 
   .product h3 {
-    font-size: 20px;
-    margin: 10px 0;
+    font-size: 18px;
   }
 
   .product p {
-    font-size: 16px;
-    margin: 0;
+    font-size: 14px;
   }
 
   .product button {
-    padding: 10px 20px;
-    font-size: 16px;
+    font-size: 14px;
+    padding: 8px 16px;
   }
 }
