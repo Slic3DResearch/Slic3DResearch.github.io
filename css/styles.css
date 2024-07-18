@@ -12,22 +12,25 @@ header {
   background: linear-gradient(90deg, #3DD2E8, #68DDEB); /* Gradient background */
   padding: 15px 20px;
   display: flex;
-  justify-content: center;
+  justify-content: center; /* Center the nav */
   align-items: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 nav {
   display: flex;
-  justify-content: space-around; /* Distribute navigation links evenly */
-  width: 100%; /* Ensure nav takes full width */
+  justify-content: center; /* Center the links */
+  gap: 20px; /* Space between links */
+  max-width: 800px; /* Set a max width to keep links closer */
+  width: 100%; /* Ensure nav takes full width for spacing */
 }
 
+/* Navigation Links */
 header a {
   color: black;
   text-decoration: none;
   font-size: 18px;
-  padding: 10px 15px;
+  padding: 10px 15px; /* Padding for clickable area */
   transition: color 0.3s ease;
 }
 
