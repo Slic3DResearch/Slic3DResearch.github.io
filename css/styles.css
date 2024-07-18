@@ -38,13 +38,36 @@ header a:hover {
   color: #F0F0F0; /* Lighter color on hover */
 }
 
+
+
 /* Hero Section */
 .hero {
-  background: url('img/hero-background.jpg') no-repeat center center/cover;
+  background: url('img/hero-background.jpg') no-repeat center center/cover; /* Main background */
   text-align: center;
   padding: 100px 20px;
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  position: relative; /* Allow positioning child elements */
 }
+
+/* Banner Styling */
+.hero-banner {
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for contrast */
+  padding: 30px; /* Add some padding for spacing */
+  border-radius: 10px; /* Rounded corners for aesthetics */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+  display: inline-block; /* Align like a block for the banner */
+  position: relative; /* Position element relative to the hero */
+  z-index: 1; /* Ensure it sits above the hero background */
+}
+
+/* Text Style in the Hero Banner */
+.hero-banner h1 {
+  color: #3DD2E8; /* Change color to brand color for better visibility */
+}
+
+.hero-banner p {
+  color: black; /* Ensures the paragraph text is clearly visible */
+}
+
 
 .hero h1 {
   font-size: 48px;
