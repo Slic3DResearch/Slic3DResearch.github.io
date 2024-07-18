@@ -15,9 +15,10 @@
   </header>
 
   <main>
-    <div class="content-container contact">
-      <h1>Contact (not functional yet)</h1>
-      <form>
+    <!-- Contact Section -->
+    <section class="contact">
+      <h1>Contact Us</h1>
+      <form action="/send-message" method="post">
         <div>
           <label for="name">Name:</label>
           <input type="text" id="name" name="name" required>
@@ -42,7 +43,13 @@
           <img src="/img/Instagram_Glyph_Black.png" alt="Instagram">
         </a>
       </div>
-    </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta">
+      <h2>Get in Touch with Us</h2>
+      <button onclick="window.location.href='/store'">Visit Our Store</button>
+    </section>
   </main>
 
   <footer>

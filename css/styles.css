@@ -159,8 +159,106 @@ footer {
   color: white;
   padding: 20px;
   text-align: center;
+  margin-top: 10px;
+}
+
+
+
+
+/* About section */
+.about {
+  background-color: #F0F0F0;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.about h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.about-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+
+
+
+/* Contact section */
+.contact {
+  background-color: #F0F0F0;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contact h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.contact form div {
+  margin-bottom: 15px;
+}
+
+.contact label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact textarea {
+  height: 100px;
+}
+
+.contact button {
+  background-color: #3DD2E8; /* Light Blue button */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+  background-color: #35BBC6;
+}
+
+.social-buttons {
   margin-top: 20px;
 }
+
+.social-buttons img {
+  width: auto; /* Adjust width as needed */
+  height: 40px;
+  margin-right: 10px; /* Add some spacing between icons */
+}
+
+
+
+
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -183,5 +281,27 @@ footer {
 
   .cta h2 {
     font-size: 28px;
+  }
+
+  .about h1 {
+    font-size: 28px;
+  }
+
+  .about-content p {
+    font-size: 16px;
+  }
+
+  .contact h1 {
+    font-size: 28px;
+  }
+
+  .contact form {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .contact input,
+  .contact textarea {
+    font-size: 16px;
   }
 }
