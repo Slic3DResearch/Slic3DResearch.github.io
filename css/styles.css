@@ -1,133 +1,31 @@
 body {
   background-color: #F0F0F0; /* Light Grey background */
   color: black;
-  font-family: Arial, sans-serif; /* Clean sans-serif font */
+  font-family: 'Roboto', sans-serif; /* Modern sans-serif font */
   margin: 0;
   padding: 0;
 }
 
-/* Updated header styles */
 header {
   background: linear-gradient(90deg, #3DD2E8, #68DDEB); /* Gradient background */
-  padding: 15px 20px; /* Reduced padding for a sleeker look */
+  padding: 15px 20px;
   display: flex;
-  justify-content: space-around; /* Evenly spaced links */
-  align-items: center; /* Center aligned items */
+  justify-content: space-around;
+  align-items: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 header a {
-  color: white; /* White text for better contrast */
+  color: white;
   text-decoration: none;
   font-size: 18px;
-  padding: 10px 15px; /* Adjusted padding for balance */
-  transition: color 0.3s ease; /* Smooth transition for hover effect */
+  padding: 10px 15px;
+  transition: color 0.3s ease;
 }
 
 header a:hover {
   color: #F0F0F0; /* Slightly lighter color on hover */
 }
-
-/* Main container */
-main {
-  max-width: 800px; /* Adjust maximum width as per your design */
-  margin: 20px auto; /* Center the container horizontally and add space around it */
-  padding: 20px; /* Apply padding inside the container */
-  background-color: #fff; /* White background for main content */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Adding a subtle shadow */
-}
-
-h1 {
-  font-size: 30px;
-  margin-bottom: 10px;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Styles for Contact Page */
-.contact form {
-  margin-top: 20px;
-}
-
-.contact label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.contact input,
-.contact textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  margin-bottom: 10px;
-}
-
-.contact textarea {
-  height: 100px;
-}
-
-.contact button {
-  background-color: #3DD2E8; /* Light Blue button */
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-/* Styles for Store Page */
-.store .product {
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.store .product img {
-  width: 200px;
-  margin-right: 20px;
-}
-
-.store .product h2 {
-  font-size: 20px;
-  margin-bottom: 5px;
-}
-
-.store .product p {
-  margin-bottom: 5px;
-}
-
-.store .product a {
-  background-color: #3DD2E8; /* Light Blue button */
-  color: white;
-  padding: 5px 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-footer {
-  background-color: #3DD2E8; /* Light Blue color (same as header) */
-  padding: 20px;
-  color: white; /* Text color for better contrast */
-  text-align: center;
-}
-
-.social-buttons {
-  margin-top: 20px;
-}
-
-.social-buttons img {
-  width: auto; /* Adjust width as needed */
-  height: 40px;
-  margin-right: 10px; /* Add some spacing between icons */
-}
-
-
 
 /* Hero section */
 .hero {
@@ -254,4 +152,36 @@ footer {
 
 .cta button:hover {
   background-color: #F0F0F0;
+}
+
+footer {
+  background-color: #3DD2E8;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .features .feature {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .hero {
+    padding: 70px 20px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .cta h2 {
+    font-size: 28px;
+  }
 }
