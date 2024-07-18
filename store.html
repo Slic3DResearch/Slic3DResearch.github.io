@@ -3,8 +3,72 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Store - Slic3D Research</title>
+  <title>Store - Slic3D Research</title>
   <link rel="stylesheet" href="/css/styles.css">
+  <style>
+    /* Store Page Specific Styles */
+    .store {
+      padding: 50px 20px;
+      background-color: #fff;
+      text-align: center;
+    }
+
+    .store h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+      gap: 20px; /* Space between items */
+      margin-top: 20px;
+    }
+
+    .product {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 15px;
+      text-align: left;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .product:hover {
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .product img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .product h3 {
+      font-size: 20px;
+      margin: 10px 0;
+    }
+
+    .product p {
+      font-size: 16px;
+      margin: 0;
+    }
+
+    .product button {
+      background-color: #3DD2E8;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    .product button:hover {
+      background-color: #35BBC6;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -15,33 +79,70 @@
   </header>
 
   <main>
-    <div class="content-container store">
-      <h1>Store (placeholder)</h1>
-
-      <div class="product">
-        <img src="product1.jpg" alt="Product 1">
-        <div>
-          <h2>Product 1</h2>
-          <p>Description of Product 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <a href="#">Buy Now</a>
+    <!-- Store Section -->
+    <section class="store">
+      <h1>Our Products</h1>
+      
+      <div class="product-grid">
+        <!-- Placeholder for Product 1 -->
+        <div class="product">
+          <img src="/img/product-placeholder.png" alt="Product 1">
+          <h3>Product Title 1</h3>
+          <p>$XX.XX</p>
+          <button onclick="addToCart('Product 1')">Add to Cart</button>
+          <!-- Placeholder: Insert functionality for adding to cart -->
         </div>
-      </div>
 
-      <div class="product">
-        <img src="product2.jpg" alt="Product 2">
-        <div>
-          <h2>Product 2</h2>
-          <p>Description of Product 2. Duis aute irure dolor in reprehenderit in voluptate velit esse cill</p>
-          <a href="#">Buy Now</a>
+        <!-- Placeholder for Product 2 -->
+        <div class="product">
+          <img src="/img/product-placeholder.png" alt="Product 2">
+          <h3>Product Title 2</h3>
+          <p>$XX.XX</p>
+          <button onclick="addToCart('Product 2')">Add to Cart</button>
+          <!-- Placeholder: Insert functionality for adding to cart -->
         </div>
+
+        <!-- Placeholder for Product 3 -->
+        <div class="product">
+          <img src="/img/product-placeholder.png" alt="Product 3">
+          <h3>Product Title 3</h3>
+          <p>$XX.XX</p>
+          <button onclick="addToCart('Product 3')">Add to Cart</button>
+          <!-- Placeholder: Insert functionality for adding to cart -->
+        </div>
+
+        <!-- Placeholder for Product 4 -->
+        <div class="product">
+          <img src="/img/product-placeholder.png" alt="Product 4">
+          <h3>Product Title 4</h3>
+          <p>$XX.XX</p>
+          <button onclick="addToCart('Product 4')">Add to Cart</button>
+          <!-- Placeholder: Insert functionality for adding to cart -->
+        </div>
+
+        <!-- Placeholder for Additional Products -->
+        <!-- Repeat the div structure above for more products -->
+        
       </div>
+    </section>
 
-    </div>
-
+    <!-- Call to Action Section -->
+    <section class="cta">
+      <h2>Have Questions?</h2>
+      <button onclick="window.location.href='/contact'">Contact Us</button>
+    </section>
   </main>
 
   <footer>
     <p>&copy; 2024 Slic3D Research</p>
   </footer>
+
+  <script>
+    // Placeholder function for adding items to a cart
+    function addToCart(productName) {
+      alert(productName + ' has been added to your cart!');
+      // Implement actual add to cart functionality here (e.g., using local storage or integrating with a shopping cart service)
+    }
+  </script>
 </body>
 </html>
