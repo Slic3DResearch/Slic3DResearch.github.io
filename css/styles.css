@@ -40,10 +40,9 @@ header a:hover {
 
 
 
-
 /* Hero Section */
 .hero {
-  background: url('img/hero-background1.png') no-repeat center center/cover; /* Main background */
+  background: url('/img/hero-background1.png') no-repeat center center/cover; /* Main background */
   text-align: center;
   padding: 100px 20px;
   position: relative; /* Allow positioning child elements */
