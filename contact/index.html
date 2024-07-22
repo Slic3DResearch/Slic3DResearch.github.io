@@ -19,30 +19,38 @@
   <main>
     <!-- Contact Section -->
     <section class="contact">
-      <h1>Contact Us</h1>
+      <h1>Contact</h1>
       <form action="/send-message" method="post">
         <div>
           <label for="name">Name:</label>
           <input type="text" id="name" name="name" required>
-        </div>
-        <div>
+      </div>
+      <div>
           <label for="email">Email:</label>
           <input type="email" id="email" name="email" required>
-        </div>
-        <div>
+      </div>
+      <div>
           <label for="message">Message:</label>
           <textarea id="message" name="message" rows="4" required></textarea>
-        </div>
-        <button type="submit">Send</button>
+      </div>
+      <div>
+          <!-- Align Subscribe checkbox -->
+          <label for="subscribe">
+              <input type="checkbox" name="subscribe" id="subscribe">
+              Subscribe to receive updates
+          </label>
+      </div>
+      <!-- Send button -->
+       <button type="submit">Send (but doesn't work yet)</button>
       </form>
 
       <!-- Social Media Buttons Section -->
       <div class="social-buttons">
-        <h2>Connect with Us</h2>
-        <a href="https://www.youtube.com/channel/your-channel" target="_blank" aria-label="YouTube">
+        <h2>Connect</h2>
+        <a href="https://www.youtube.com/channel/your-channel" target="youtube.com" aria-label="YouTube">
           <img src="/img/yt_logo_mono_light.png" alt="YouTube">
         </a>
-        <a href="https://www.instagram.com/your-instagram" target="_blank" aria-label="Instagram">
+        <a href="https://www.instagram.com/your-instagram" target="instagram.com" aria-label="Instagram">
           <img src="/img/Instagram_Glyph_Black.png" alt="Instagram">
         </a>
       </div>
@@ -50,21 +58,21 @@
 
     <!-- Call to Action Section -->
     <section class="cta">
-      <h2>Get in Touch with Us</h2>
+      <h2>Visit the store</h2>
       <button onclick="window.location.href='/store'">Visit Our Store</button>
     </section>
   </main>
 
   <footer>
     <p>&copy; 2024 Slic3D Research</p>
-    <p>*all "product" images are placeholders for testing purposes.</p>
+    <p>*All "product" images are placeholders for testing purposes.</p>
   </footer>
 
   <!-- Optional: JavaScript for form confirmation -->
   <script>
     document.querySelector('form').addEventListener('submit', function(e) {
       e.preventDefault(); // Prevent form submission for example
-      alert('Thank you for your message! We will get back to you shortly.');
+      alert("Thank you!");
       // Here you can handle sending the form data
       this.reset(); // Reset form after submission
     });

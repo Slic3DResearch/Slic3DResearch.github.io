@@ -9,7 +9,7 @@ body {
 
 /* Header Styles */
 header {
-  background: linear-gradient(90deg, #3DD2E8, #68DDEB); /* Gradient background */
+  background: linear-gradient(0deg, #3DD2E8, #12aac2); /* Gradient background */
   padding: 15px 20px;
   display: flex;
   justify-content: center; /* Center the nav */
@@ -27,15 +27,16 @@ nav {
 
 /* Navigation Links */
 header a {
-  color: black;
-  text-decoration: none;
-  font-size: 18px;
+  color: rgb(255, 255, 255);
+  text-decoration:solid;
+  font-size: 20px;
   padding: 10px 15px; /* Padding for clickable area */
   transition: color 0.3s ease;
 }
 
 header a:hover {
-  color: #F0F0F0; /* Lighter color on hover */
+  color: #f0f0f09d; /* Lighter color on hover */
+  transform:scale(1.1);
 }
 
 
@@ -60,8 +61,9 @@ header a:hover {
 }
 
 /* Text Style in the Hero Banner */
-.hero-banner h1 {
-  color: #3DD2E8; /* Change color to brand color for better visibility */
+.hero .hero-banner h1 {
+  color: #000000; /* Change color to brand color for better visibility */
+  margin-top:0px;
 }
 
 .hero-banner p {
@@ -73,7 +75,7 @@ header a:hover {
   font-size: 48px;
   margin-bottom: 20px;
   color: black; /* Dark color for readability */
-  animation: fadeInDown 1s ease-in-out;
+  animation: fadeInDown 1s ease-in-out
 }
 
 .hero p {
@@ -101,7 +103,7 @@ header a:hover {
 
 /* Animations */
 @keyframes fadeInDown {
-  0% { opacity: 0; transform: translateY(-20px); }
+  0% { opacity: 0; transform: translateY(-200px); }
   100% { opacity: 1; transform: translateY(0); }
 }
 
@@ -129,20 +131,146 @@ header a:hover {
   vertical-align: top;
 }
 
-.features .feature img {
-  width: 80px;
+/* .features .feature img {
+  height: 200px;
+  width: auto;
   margin-bottom: 10px;
-}
+  vertical-align:text-top
+} */
 
 .features .feature p {
   font-size: 16px;
   margin-top: 10px;
 }
 
-.features .feature:hover {
-  transform: translateY(-5px);
-  transition: transform 0.3s ease;
+.features .feature {
+  position: relative; /* Create a positioning context for children */
+  overflow:visible /* Prevent overflow of zoomed image */
 }
+
+/* Image settings */
+.features .feature img {
+  position: relative; /* Allow overlapping by taking it out of flow */
+  left: 0; /* Align to the left */
+  top: 0; /* Align to the top */
+  width: 100%; /* Fill feature block */
+  max-width:500px;
+  height: auto; /* Maintain aspect ratio */
+  max-height:fit-content;
+  transition: transform 0.3s ease; /* Smooth scaling transition */
+  z-index: 1; /* Set a base z-index for the image */1
+}
+
+/* Zoom effect on hover */
+.features .feature:hover img {
+  transform: scale(1.2); /* Zoom effect */
+  z-index: 2; /* Bring the image above other content on hover */
+  box-shadow: -5px 5px 12px 0px rgba(0, 0, 0, 0.2); 
+}
+
+/* Ensure text elements are above the zoomed image */
+.features .feature h2,
+.features .feature p {
+  position:relative; /* Ensure text is on top layer */
+  z-index: 1; /* Higher z-index to remain above the image */
+}
+
+
+
+/* Product Showcase Section */
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 20px; /* Space between items */
+  margin-top: 20px;
+}
+
+.product {
+  /* border: 1px solid #ccc; */
+  border-radius: 5px;
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #F0F0F0; /* Light background */
+  transition: box-shadow 0.3s ease;
+}
+
+.product:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+  position: relative; /* Allow overlapping by taking it out of flow */
+  left: 0; /* Align to the left */
+  top: 0; /* Align to the top */
+  width: 100%; /* Fill feature block */
+  max-width:800px;
+  height: auto; /* Maintain aspect ratio */
+  max-height:fit-content;
+  transition: transform 0.3s ease; /* Smooth scaling transition */
+  z-index: 1; /* Set a base z-index for the image */
+  border-radius: 5px;
+}
+
+.product h3 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.product p {
+  font-size: 16px;
+  margin: 0;
+}
+
+.product button {
+  background-color: #3DD2E8;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.product button:hover {
+  background-color: #35BBC6;
+}
+
+/* Technology Section */
+.technology {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #fff; /* White background contrast */
+}
+
+.technology img{
+  padding: 20px 20px;
+  background-color: #fff; /* White background contrast */
+  width:100%;
+  max-width:fit-content;
+  height:auto
+}
+
+/* FAQs Section */
+.faqs {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #F0F0F0; /* Light background */
+}
+
+/* General Section Styles */
+h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #3DD2E8; /* Brand color */
+}
+
+
+
+
+
 
 /* About Section */
 .about {
@@ -151,18 +279,92 @@ header a:hover {
   text-align: center;
 }
 
-.about h1,
+
 .about h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
+  font-size: 36px; /* Slightly smaller than h1 */
+  margin-bottom: 15px; /* Less space below than h1 */
   color: #3DD2E8; /* Use brand color */
+  text-align: center; /* Align left for consistency */
 }
 
-.about p {
+.about-us p,.ceo-biography p {
   font-size: 18px;
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 950px;
+  margin: 0 0;
+  background-color: white; /* White background for contrast */
+  padding: 20px; /* Padding around the section */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin: 10px 10px; /* Center the section and space from others */
+
 }
+
+
+/* About us Section */
+.about-us,.ceo-biography {
+  background-color: #3DD2E8; /* White background for contrast */
+  padding: 30px; /* Padding around the section */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin: 10px auto; /* Center the section and space from others */
+  max-width: 1000px; /* Limit max width for readability */
+  transition: transform 0.3s ease; /* Add transition effect */
+}
+
+/* On hover effect for the biography section */
+.about-us:hover {
+  transform: translateY(-5px); /* Slightly lift when hovered */
+}
+
+/* CEO Biography Section */
+.ceo-biography{
+  background-color: #3DD2E8; /* White background for contrast */
+  padding: 30px; /* Padding around the section */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin: 20px auto; /* Center the section and space from others */
+  max-width: 1000px; /* Limit max width for readability */
+  transition: transform 0.3s ease; /* Add transition effect */
+}
+
+/* On hover effect for the biography section */
+.ceo-biography:hover {
+  transform: translateY(-5px); /* Slightly lift when hovered */
+}
+
+/* Portfolio Section */
+.portfolio {
+  background-color: white; /* White background for consistency */
+  padding: 30px; /* Padding around the section */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin: 20px auto; /* Center the section and space from others */
+  max-width: 800px; /* Limit max width for readability */
+  transition: transform 0.3s ease; /* Add transition effect */
+}
+
+/* On hover effect for the portfolio section */
+.portfolio:hover {
+  transform: translateY(-5px); /* Slightly lift when hovered */
+}
+
+/* Adding a border between sections */
+.about-us,
+.ceo-biography,
+.portfolio {
+  border-bottom: 2px solid #3DD2E8; /* Brand color border to separate sections */
+}
+
+/* Optional: Adding some space above the border */
+
+.ceo-biography:last-child,
+.portfolio:last-child {
+  border-bottom: none; /* Remove the last border */
+}
+
+
+
+
 
 /* Call to Action Section */
 .cta {
@@ -173,6 +375,7 @@ header a:hover {
 }
 
 .cta h2 {
+  color: white;
   font-size: 36px;
   margin-bottom: 20px;
 }
@@ -207,9 +410,11 @@ footer {
   text-align: center;
 }
 
+.about h1,
+.store h1,
 .contact h1 {
   font-size: 36px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   color: #3DD2E8; /* Use brand color */
 }
 
@@ -229,10 +434,12 @@ footer {
   font-size: 16px;
 }
 
+/* Contact Section Input and Textarea Styles */
 .contact input,
 .contact textarea {
-  width: 100%;
-  padding: 10px;
+  width: calc(100% - 20px); /* Adjust the width to account for padding */
+  padding: 10px;  /* Keep padding for input */
+  margin: 0 auto; /* Center align on mobile */
   border: 1px solid #ccc;
   border-radius: 5px;
 }
@@ -273,61 +480,6 @@ footer {
   text-align: center;
 }
 
-.store h1 {
-  font-size: 36px;
-  margin-bottom: 20px;
-}
-
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
-  gap: 20px; /* Space between items */
-  margin-top: 20px;
-}
-
-.product {
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 15px;
-  text-align: left;
-  transition: box-shadow 0.3s ease;
-}
-
-.product:hover {
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-.product img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 5px;
-}
-
-.product h3 {
-  font-size: 20px;
-  margin: 10px 0;
-}
-
-.product p {
-  font-size: 16px;
-  margin: 0;
-}
-
-.product button {
-  background-color: #3DD2E8;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 10px;
-  transition: background-color 0.3s ease;
-}
-
-.product button:hover {
-  background-color: #35BBC6;
-}
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -348,9 +500,7 @@ footer {
     font-size: 18px;
   }
 
-  .cta h2,
-  .about h1,
-  .contact h1 {
+  .cta h2 {
     font-size: 28px;
   }
 
@@ -383,4 +533,40 @@ footer {
     font-size: 14px;
     padding: 8px 16px;
   }
+  
+  .contact input,
+  .contact textarea {
+    margin-right: 10px; /* Buffer on the right side */
+    align-self: left;
+  }
+}
+
+/* Checkbox Styles */
+/* General label styles */
+.contact label {
+  display:block; /* Make labels block elements for proper alignment */
+  margin-bottom: 5px; /* Space below labels */
+}
+
+/* Align the checkbox with the input fields */
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+  width: calc(100% - 20px); /* Adjusted width */
+  padding: 10px; /* Keep padding for input */
+  margin-bottom: 15px; /* Space between each input */
+  border: 1px solid #ccc; /* Border styling */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Checkbox alignment */
+.contact input[type="checkbox"] {
+  margin: 0; /* Reset margin */
+  vertical-align: middle; /* Align vertically with the text */
+}
+
+/* Subscribe Label */
+.contact div:last-child {
+  margin-bottom: 20px; /* Add space below the checkbox */
+  align-items: center;
 }

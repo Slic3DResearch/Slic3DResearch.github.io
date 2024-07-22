@@ -20,39 +20,64 @@
     <!-- Hero Section -->
     <section class="hero">
       <div class="hero-banner">
-        <h1>Welcome to Slic3D Research</h1>
-        <p>Innovating the future of 3D printing technology</p>
-        <button onclick="window.location.href='/contact'">Learn More</button>
+        <h1>Slic3D Research</h1>
+        <h3>Revolutionizing 3D Printing with novel technologies</h3>
+        <p>Innovating the future of addititve manufacturing with out of the box thinking</p>
+        <p>*** Most of the content is placeholder for an in-development product. Please use the contact form to request more information! ***</p>
+        <button onclick="window.location.href='#seeitinaction'">See It in Action</button>
+        <button onclick="window.location.href='#howitworks'">Learn More</button>
       </div>
     </section>
 
     <!-- Features Section -->
     <section class="features">
-      <h2>Our Features</h2>
+    <div class="features">
+      <h2>Features</h2>
       <div class="feature">
         <img src="/img/feature1.png" alt="High Precision">
-        <p>High Precision</p>
+        <h3>Accurate and precise</h3>
+        <p>Achieve intricate designs with unprecedented accuracy for successful ceramic pieces.</p>
       </div>
       <div class="feature">
         <img src="/img/feature2.png" alt="Speedy Prints">
-        <p>Speedy Prints</p>
+        <h2>Skip post-processing</h2>
+        <p>Eliminate the need for a furnace/kiln, go directly to 'brown' state!</p>
       </div>
       <div class="feature">
         <img src="/img/feature3.png" alt="Advanced Materials">
-        <p>Advanced Materials</p>
+        <h3>Advanced Materials</h3>
+        <p>Compatible with a wide range of ceramic materials for versatile applications.</p>
       </div>
+    </div>
+  </section>
+
+
+    <!-- Product Showcase -->
+    <section class="product">
+      <a id="seeitinaction"><h2>See it in action</h2></a>
+      <p>Watch a demo of our ceramic 3D printer. <a href url="https://www.youtube.com"></p>
+      <img src="/img/showcase-image.png" alt="3D Printer in Action"></a>
     </section>
 
-    <!-- About Section -->
-    <section class="about">
-      <h2>About Us</h2>
-      <p><a href="/about">Learn more about our mission and values.</a></p>
+    <!-- About the Technology Section -->
+    <section class="technology">
+      <a id="howitworks"><h2>How It Works</h2></a>
+      <p>Learn about our innovative microwave sintering process.</p>
+      <img src="/img/sintering-process.png" alt="Sintering Process Illustration">
+    </section>
+
+    <!-- FAQs Section -->
+    <section class="faqs">
+      <h2>Frequently Asked Questions</h2>
+      <p><strong>What materials can I use?</strong> Our printer is designed for multiple ceramic materials...</p>
+      <p><strong>How safe is the technology?</strong> Safety is our top priority; here’s how we ensure that...</p>
+      <p><strong>Ask your question here!</strong> and lets find the answers together</p>
     </section>
 
     <!-- Call to Action Section -->
     <section class="cta">
-      <h2>Get Started with Slic3D Research</h2>
-      <button onclick="window.location.href='/contact'">Contact Us</button>
+      <h2>Join Our Journey</h2>
+      <button onclick="window.location.href='/contact'">Subscribe for Updates</button>
     </section>
   </main>
 
@@ -61,13 +86,6 @@
     <p>*all "product" images are placeholders for testing purposes.</p>
   </footer>
 
-  <!-- Optional: JavaScript to enhance user experience -->
-  <script>
-    // Example function to enhance the user experience
-    document.querySelector('.cta button').addEventListener('click', () => {
-      alert('Thank you for your interest! We will get back to you soon!');
-      window.location.href='/contact';
-    });
-  </script>
+
 </body>
 </html>
